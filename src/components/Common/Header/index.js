@@ -16,12 +16,20 @@ function Header() {
             <Link to='/'>
             <p className='link'>Home</p>
             </Link>
+<<<<<<< HEAD
             {/* <Link to='/compare'>
+=======
+             <Link to='/compare'>
+>>>>>>> 33d1521780dd96fcffebd72c117f41bd7e6cc1a0
             <p className='link'>Compare</p>
             </Link>
-            <Link to='/watchlist'>
+             <Link to='/watchlist'>
             <p className='link'>WatchList</p>
+<<<<<<< HEAD
             </Link> */}
+=======
+             </Link>
+>>>>>>> 33d1521780dd96fcffebd72c117f41bd7e6cc1a0
             <Link to='/dashboard'>
             <Button text={"Dashboard"}
             outlined={true}
