@@ -1,6 +1,6 @@
 .pagination-div {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    margin: 6rem;
+    margin: 3rem;
   }

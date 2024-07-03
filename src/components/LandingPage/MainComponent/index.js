@@ -5,6 +5,9 @@ import iphone from "../../../assets/iphone.png"
 import gradient from "../../../assets/gradient.png"
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
+import { RWebShare } from "react-web-share";
+import { toast } from "react-toastify";
+
 function MainComponent() {
   return (
     <div className='flex-info'>
@@ -28,8 +31,16 @@ function MainComponent() {
                 <Link to="/dashboard">
                 <Button text={"Dashboard"} onClick={() => console.log("clicked")} />
                 </Link>
-                <Button text={"Share"} outlined={true} />
-
+                <RWebShare
+            data={{
+              text: "CryptoDashboard made by Avi Vashishta using React JS.",
+              url: "https://crypto-dashboard-jan.netlify.app",
+              title: "CryptoTracker.",
+            }}
+            onClick={() => toast.info("App Shared!")}
+          >
+            <Button text={"Share App"} outlined={true} />
+          </RWebShare>
             </motion.div>
         </div>
         <div className='phone-container'>

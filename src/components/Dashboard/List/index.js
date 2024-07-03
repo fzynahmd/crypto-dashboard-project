@@ -53,8 +53,8 @@ function List({ coin }) {
         </h3>
       </td>
       </Tooltip>
-      <td>
-      <Tooltip title="Total Volume" >
+      <td  class="total-volume-tooltip">
+      <Tooltip title="Total Volume">
         <p className='total_volume td-right-align td-total-volume'> {coin.total_volume.toLocaleString()}</p>
         </Tooltip>
       </td>
